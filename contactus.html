@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Contact Us</title>
+    <style type="text/css">
+        .bs-example {
+          margin: 0px;
+        float: left;
+        display: inline;
+        }
+        .navbar-brand {
+          font-size: 20px;
+          font-family: sans-serif;
+          display: inline;
+    
+        }
+      </style>
+</head>
+<body background="">
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a style="color: black;" href="index.html">Home</a>
+                <li><a style="color: black;" href="aboutus.html">About us</a></li>
+                <li><a style="color: black;" href="academics.html">Academics</a></li>
+                <li><a style="color: black;" href="sports.html">Sports</a></li>
+                <li><a style="color: black;" href="faculty.html">Faculty</a></li>
+                <li><a style="color: black;" href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 style="text-align: center;color: blue;margin-top: 10px;">Contact Us</h1>
+    <div id="googleMap" style="width:40%;height:600px;float: right;margin-top: 10px;margin-right:100px"></div>
+
+    <script>
+        function myMap() {
+            var mapProp= {
+            center:new google.maps.LatLng(16.907662,77.064730),
+            zoom:5,
+            };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+    <div class="address">
+        <div class="column">
+        <address>
+            <h6 style="color:blue;font-size:170%">ADDRESS</h6><br>
+            Sarvodaya Education Society<br>
+            Near Government Hospital <br>
+            Yergol 585218<br>
+            Yadgir Karnataka
+    </address>
+        <br>
+        <br>
+        <br>
+            <h6 style="color:blue;font-size:170%">PHONE</h6><br>
+            8884718588
+        <br>
+        <br>
+        <br>
+        <br>
+            <h6 style="color:blue;font-size:170%">EMAIL</h6><br>
+            archavanbrothers@gmail.com
+        </div>
+    </div>
+</body>
+</html>
